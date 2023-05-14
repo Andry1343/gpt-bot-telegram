@@ -1,15 +1,17 @@
 import { Telegraf, session } from "telegraf";
 import { code } from "telegraf/format";
 import { message } from "telegraf/filters"; // іморт необхідних фільтрів
-import config from "config";
 import { ogg } from "./ogg.js";
 import { openai } from "./openai.js";
+import dotenv from "dotenv"
+dotenv.config();
+
 
 const INITIAL_SESSION = {
   messages: [],
 };
 
-const bot = new Telegraf(config.get("TELEGRAM_TOKEN"));
+const bot = new Telegraf(process.env.TELEGRAM_TOKEN);
 
 bot.use(session());
 
