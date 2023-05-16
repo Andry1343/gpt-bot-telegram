@@ -4,7 +4,7 @@ import { message } from "telegraf/filters";
 import { ogg } from "./ogg.js";
 import { openai } from "./openai.js";
 import dotenv from "dotenv";
-import { createReadStream } from "fs";
+// import { createReadStream } from "fs";
 dotenv.config();
 
 const INITIAL_SESSION = {

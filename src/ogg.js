@@ -4,7 +4,7 @@ import installer from "@ffmpeg-installer/ffmpeg"; // то что позволя�
 import { createWriteStream } from "fs";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
-import { error } from "console";
+// import { error } from "console";
 import { removeFile } from "./utils.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
